@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+:root {
+  --primary: #e67e22;
+  --primary-dark: #d35400;
+  --bg: #fffbf8;
+  --surface: #ffffff;
+  --text: #2d3436;
+  --text-light: #636e72;
+  --accent: #f39c12;
+  --border: #f1e4d8;
+  --success: #27ae60;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', -apple-system, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: var(--text);
+}
+
+button {
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tab-button {
+  padding: 10px 25px;
+  border: none;
+  background: transparent;
+  color: var(--text-light);
+  cursor: pointer;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+  font-size: 1rem;
+}
+
+.tab-button.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(230, 126, 34, 0.08);
+  border: 1px solid var(--border);
+}
